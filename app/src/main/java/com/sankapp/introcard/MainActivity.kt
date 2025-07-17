@@ -35,17 +35,17 @@ class MainActivity : ComponentActivity() {
 fun MyName() {
     Column {
         Text(text = "John Doe",
-            modifier = Modifier.padding(top = 40.dp).fillMaxWidth(),
+            modifier = Modifier.padding(top = 50.dp).fillMaxWidth(),
             fontSize = 40.sp,
             textAlign = TextAlign.Center
         )
-        Text(text = "1234567890",
-            modifier = Modifier.padding(top = 10.dp),
-            fontSize = 40.sp
+        Text(text = "Android Developer",
+            modifier = Modifier.padding(20.dp).padding(top = 40.dp),
+            fontSize = 20.sp,
         )
-        Text(text = "1234567890",
-            modifier = Modifier.padding(top = 40.dp),
-            fontSize = 40.sp
+        Text(text = "9988117788",
+            modifier = Modifier.padding(20.dp),
+            fontSize = 20.sp
         )
     }
 }

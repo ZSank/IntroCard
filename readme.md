@@ -1,5 +1,5 @@
 ## About
 - This is a basic compose project. 
 
-## Screen made
-<img alt="img.png" src="img.png" width="108"/>
+## App Preview
+<img alt="img.png" src="img.png" width="200"/>

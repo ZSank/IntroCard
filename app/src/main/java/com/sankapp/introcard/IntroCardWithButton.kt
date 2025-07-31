@@ -1,5 +1,6 @@
 package com.sankapp.introcard
 
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -54,6 +55,11 @@ fun IntroCardWithButton() {
 }
 
 
+private const val IntroCardButton = "IntroCardButton"
+
 fun printMyValue() {
     println(" printMyValue")
+    Log.d(IntroCardButton, "printlnMyValueLog")
 }
+
+

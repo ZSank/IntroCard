@@ -25,7 +25,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            IntroCardWithButton()
+            LoginScreen()
+//            IntroCardWithButton()
 //            MyNameWithImage()
         }
     }

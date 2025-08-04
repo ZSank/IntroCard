@@ -18,6 +18,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sankapp.introcard.contact.ContactListScreen
 import com.sankapp.introcard.ui.theme.IntroCardTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +26,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            LoginScreen()
+            ContactListScreen()
+//            LoginScreen()
 //            IntroCardWithButton()
 //            MyNameWithImage()
         }

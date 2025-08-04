@@ -15,8 +15,10 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
+@Preview()
 @Composable
 fun LoginScreen(modifier: Modifier = Modifier) {
 
@@ -25,8 +27,11 @@ fun LoginScreen(modifier: Modifier = Modifier) {
     var password by rememberSaveable { mutableStateOf("") }
     var result by rememberSaveable { mutableStateOf("") }
 
-    fun triggerCredentialCheck(id: String, pass: String) {
-        if (id == "abc" && pass == "123") {
+    fun validateDetails() {
+        val correctId = userId == "abc"
+        val correctPass = password == "123"
+
+        if (correctId && correctPass) {
             result = "✅ Success! Welcome."
         } else {
             result = "❌ Error: Invalid Credentials."
@@ -53,8 +58,10 @@ fun LoginScreen(modifier: Modifier = Modifier) {
         )
 
         Button(
-            onClick = {triggerCredentialCheck(userId, password)},
-            modifier = modifier.padding(10.dp).padding(bottom = 40.dp)
+            onClick = { validateDetails() },
+            modifier = modifier
+                .padding(10.dp)
+                .padding(bottom = 40.dp)
         ) {
             Text("Login")
         }
